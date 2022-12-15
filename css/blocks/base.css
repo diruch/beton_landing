@@ -1,0 +1,165 @@
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.calculation-modal-content-wrapper {
+    background-color: white;
+    margin: 15% auto;
+    padding: 32px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+/* The Close Button */
+.closeCalc {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeCalc:hover,
+.closeCalc:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.calculation-modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculation-modal-content-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.calculation-modal-content-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    padding-top: 24px;
+}
+
+.calculation-modal-content-type {
+    padding-top: 24px;
+}
+
+.calculation-modal-content-price {
+    padding-top: 24px;
+}
+
+.calculation-modal-content-volume {
+    padding-top: 12px;
+}
+
+.calculation-modal-content-range {
+    padding-top: 12px;
+}
+
+.calculation-modal-content-input {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+}
+
+.calculation-modal-content-input-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.modal-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #94A3B8;
+}
+
+.modal-label-value {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0F172A;
+}
+
+.modal-label-price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.modal-label-price-value {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.order-send-content-wrapper {
+    padding: 32px;
+    background-color: white;
+    width: 450px;
+    border-radius: 8px;
+    margin: 15% auto;
+}
+
+.order-send-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-send-content-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.order-send-content-descripion {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    padding-top: 16px;
+}
+
+.new-order-content-wrapper {
+    padding: 32px;
+    background-color: white;
+    width: 450px;
+    border-radius: 8px;
+    margin: 15% auto;
+}
+
+.new-order-content {
+    display: flex;
+    flex-direction: column;
+}
