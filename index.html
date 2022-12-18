@@ -586,16 +586,16 @@
         }
     })
 
-    // consultationActionBtn.addEventListener('click', function () {
-    //     var name = document.getElementById("consultation-name");
-    //     var phone = document.getElementById("consultation-phone");
-    //     console.log(name.value);
-    //     console.log(phone.value);
-    //     //TODO send req
-    //     if (checkFieldValid(name) && checkFieldValid(phone)) {
-    //         orderSendModal.style.display = "block";
-    //     }
-    // })
+    consultationActionBtn.addEventListener('click', function () {
+        var name = document.getElementById("consultation-name");
+        var phone = document.getElementById("consultation-phone");
+        console.log(name.value);
+        console.log(phone.value);
+        //TODO send req
+        if (checkFieldValid(name) && checkFieldValid(phone)) {
+            orderSendModal.style.display = "block";
+        }
+    })
 
     newOrderBtn.addEventListener('click', function () {
         var name = document.getElementById("new-order-name");
