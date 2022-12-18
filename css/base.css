@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    width: 1370px;
+    max-width: 1370px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;

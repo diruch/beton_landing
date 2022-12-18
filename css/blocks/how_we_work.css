@@ -58,3 +58,20 @@
     padding-left: 11px;
     padding-right: 11px;
 }
+
+@media (max-width: 768px) {
+
+    .how_we_work-content {
+        flex-direction: column;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+
+    .how_we_work-element {
+        align-items: center;
+        text-align: center;
+    }
+}

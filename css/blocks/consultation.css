@@ -3,21 +3,26 @@
 }
 .consultation-content {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .consultation-contancts-wrapper {
-    width: 547px;
-    height: 514px;
     background-color: #0F172A;
+    flex: 40%;
+    max-width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .consultation-contancts {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 142px;
-    max-width: 400px;
-    padding-top: 100px;
+    max-width: 270px;
 }
 
 .consultation-contancts-header {
@@ -74,9 +79,12 @@
     padding-bottom: 8px;
 }
 
-.consulation-ask {
-    padding-top: 120px;
-    padding-left: 130px;
+.consulation-ask-wrapper {    
+    flex: 60%;
+    max-width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .consulation-ask-header {
@@ -108,15 +116,41 @@
     font-size: 16px;
     line-height: 20px;
     margin-top: 40px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 16px;
     text-align: center;
     color: white;
     background-color: #DB522A;
     border-radius: 5px;
-    width: 328px;
+    width: 100%;
     height: 52px;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .consultation-content {
+        flex-direction: column;
+    }
+
+    .consulation-ask-wrapper {    
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .consultation-contancts-wrapper {
+        background-color: #0F172A;
+        flex: 100%;
+        max-width: 100%;
+        padding: 32px 56px;
+    }
+
+    .consulation-ask-wrapper {
+        padding-top: 80px;
+    }
+    
+    .consulation-ask-inputs {
+        flex-direction: column;
+        gap: 8px;
+    }
 }

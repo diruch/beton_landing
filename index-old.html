@@ -26,29 +26,21 @@
         <div class="container">
             <div class="header-row">
                 <div class="header-logo"><img src="./img/Logo.svg" alt="Logo"></div>
-                <div class="header-nav">
-                    <li><a href="#delivery">Доставка</a></li>
-                    <li><a href="#how_we_work">Этапы работы</a></li>
-                    <li><a href="#price_table-info">Стоимость бетона</a></li>
-                    <li><a href="#consultation">Контакты</a></li>
-                </div>
-                <div class="header-action">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="#delivery">Доставка</a></li>
+                        <li><a href="#how_we_work">Этапы работы</a></li>
+                        <li><a href="#price_table-info">Стоимость бетона</a></li>
+                        <li><a href="#consultation">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="home-action">
                     <a href="#calculator" class="action-header-calc-btn">Рассчитать стоимость</a>
-                </div>
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
-            </div>
-            <div class="header-mobile-menu" id="header-mobile-menu">
-                <a href="#calculator" class="action-header-calc-btn">Рассчитать стоимость</a>
-                <div class="header-nav-mobile">
-                    <li><a href="#delivery">Доставка</a></li>
-                    <li><a href="#how_we_work">Этапы работы</a></li>
-                    <li><a href="#price_table-info">Стоимость бетона</a></li>
-                    <li><a href="#consultation">Контакты</a></li>
                 </div>
             </div>
         </div>
     </header>
+
     <main>
         <section class="home" id="home">
             <div class="container">
@@ -131,7 +123,7 @@
                             <img class="delivery-content-image" src="./img/delivery/delivery2.jpg" alt="Доставка 1">
                             <span class="delivery-content-separator"></span>
                             <div class="delivery-content-price">от 150 BYN</div>
-                            <div class="delivery-content-price-description">&#8203;</div>
+                            <div class="delivery-content-price-description"></div>
                             <div class="delivery-content-action-btn neworder">Заказать доставку</div>
                         </div>
                         <div class="delivery-content-item">
@@ -223,8 +215,8 @@
                     <div class="home-action home-action-btn neworder">Заказать доставку</div>
                 </div>
             </div>
-        </section>      
-        
+        </section>
+
         <section class="calculator" id="calculator">
             <div class="container">
                 <div class="calculator-content">
@@ -303,7 +295,7 @@
                 <div class="how_we_work-content">
                     <div class="how_we_work-element">
                         <div class="how_we_work-element-header">01</div>
-                        <div class="how_we_work-element-title">Заявка на поставку</div>
+                        <div class="how_we_work-element-title">Завка на поставку</div>
                         <div class="how_we_work-element-description">Оставляете заявку на сайте или звоните нам.
                             Стоимость заранее можно узнать с помощью калькулятора</div>
                     </div>
@@ -425,16 +417,12 @@
                 </div>
                 <div class="footer-author" style="cursor: pointer;">
                     <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/arinasubach">
-                        © 2022 Design by Aryna Subach
+                        © 2022Design by Aryna Subach
                     </a>
                 </div>
             </div>
         </div>
     </footer>
-
-
-
-    
     <div id="calculationModal" class="modal">
         <div class="calculation-modal-content-wrapper">
             <span class="closeCalc">&times;</span>
@@ -538,7 +526,7 @@
                     <div class="calculation-modal-content-input-label">
                         Укажите номер телефона для связи *
                     </div>
-                    <input class="home-action home-action-input" id="new-order-phone"
+                    <input class="home-action home-action-input" id="new-order-phone" 
                         style="width: 100%; margin-top: 4px;" type="text" placeholder="+375 (XX) XXX-XX-XX">
                 </div>
                 <div class="consulation-ask-action-btn" style="width: 100%; margin-top: 24px;" id="send-new-order">
@@ -586,16 +574,16 @@
         }
     })
 
-    // consultationActionBtn.addEventListener('click', function () {
-    //     var name = document.getElementById("consultation-name");
-    //     var phone = document.getElementById("consultation-phone");
-    //     console.log(name.value);
-    //     console.log(phone.value);
-    //     //TODO send req
-    //     if (checkFieldValid(name) && checkFieldValid(phone)) {
-    //         orderSendModal.style.display = "block";
-    //     }
-    // })
+    consultationActionBtn.addEventListener('click', function () {
+        var name = document.getElementById("consultation-name");
+        var phone = document.getElementById("consultation-phone");
+        console.log(name.value);
+        console.log(phone.value);
+        //TODO send req
+        if (checkFieldValid(name) && checkFieldValid(phone)) {
+            orderSendModal.style.display = "block";
+        }
+    })
 
     newOrderBtn.addEventListener('click', function () {
         var name = document.getElementById("new-order-name");
@@ -695,16 +683,6 @@
             newOrderModal.style.display = "none";
         }
     }
-
-    var hamuberger = document.getElementById("checkbox_toggle");
-    var mobileMenu = document.getElementById("header-mobile-menu");
-    hamuberger.addEventListener('change', function () {
-        if (hamuberger.checked) {
-            mobileMenu.style.display = "block";
-        } else {
-            mobileMenu.style.display = "none";
-        }
-    })
 
 
 </script>
