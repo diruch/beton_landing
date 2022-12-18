@@ -1,6 +1,6 @@
 <?php
-$token = "5371760994:AAGjpSYN6ixedr5Vt4s4dLiNrfuuQ_ocpE0";
-$chatid = "534648774";
+$token = "";
+$chatid = "";
 
 //getUpdates($token);
 //sendMessage($chatid, "Ты такая сосочка", $token);
