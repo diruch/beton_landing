@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="home-content">
                     <div class="home-info">
-                        <h1 class="home-heading">Бетон с доставкой в Могилеве и могилевской области</h1>
+                        <h1 class="home-heading">Бетон с доставкой в Могилёве и Могилёвской области</h1>
                         <div class="home-text">
                             <p>У нас всегда можно заказать доставку бетона популярных марок высокого качества М
                                 100-М
@@ -69,12 +69,17 @@
                         </div>
                     </div>
                     <div class="home-slider">
-                        <img src="./img/slider/slider1.jpg" class="slider-content" alt="Слайдер 1">
-                        <div class="slider-buttons">
+                        <div class="slide fade">
+                            <img src="./img/slider/slider1.jpg" class="slider-content" alt="Слайдер 1">
+                        </div>
+                        <div class="slide fade">
+                            <img src="./img/slider/slider2.jpg" class="slider-content" alt="Слайдер 1">
+                        </div>
+                        <!-- <div class="slider-buttons">
                             <span class="slider-button-active"></span>
                             <span class="slider-button"></span>
                             <span class="slider-button"></span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -223,8 +228,8 @@
                     <div class="home-action home-action-btn neworder">Заказать доставку</div>
                 </div>
             </div>
-        </section>      
-        
+        </section>
+
         <section class="calculator" id="calculator">
             <div class="container">
                 <div class="calculator-content">
@@ -250,15 +255,17 @@
                                 </select>
                             </div>
                             <div class="calculator-volume-param">
-                                <p class="calculator-param-select-header">Выберите необходимый объем </p>
-                                <select id="select-volume">
+                                <p class="calculator-param-select-header">Введите необходимый объем (м³) </p>
+                                <input class="home-action home-action-input" style="width: 100%" id="select-volume" type="number"
+                                    placeholder="10">
+                                <!-- <select id="select-volume">
                                     <option value="3">3 м³</option>
                                     <option value="4">4 м³</option>
                                     <option value="5">5 м³</option>
                                     <option value="6">6 м³</option>
                                     <option value="7">7 м³</option>
                                     <option value="8">8 м³</option>
-                                </select>
+                                </select> -->
                             </div>
                         </div>
                         <div class="calculator-delivery-variant-param">
@@ -275,7 +282,7 @@
                                 </label>
                                 <div id="outcity" class="outcity">
                                     <div>
-                                        <input class="delivery-params-input" type="text" id="outcity-range"
+                                        <input class="delivery-params-input" type="number" id="outcity-range"
                                             placeholder="в цифрах">
                                     </div>
                                     <div>
@@ -434,7 +441,7 @@
 
 
 
-    
+
     <div id="calculationModal" class="modal">
         <div class="calculation-modal-content-wrapper">
             <span class="closeCalc">&times;</span>
@@ -641,6 +648,13 @@
         var spanPrice = document.getElementById("beton-price");
         var rangeDiv = document.getElementById("modal-range-div");
         rangeDiv.style.display = "none";
+        console.log(selectVolume.value);
+        if (selectVolume.value) {
+            selectVolume.style.borderColor = "#CBD5E1";
+        } else {
+            selectVolume.style.borderColor = "red";
+            return
+        }
         var cost = selectBetonMark.value * selectVolume.value;
         if (outcityRadio.checked) {
             var outcityRange = document.getElementById("outcity-range");
@@ -651,7 +665,7 @@
             }
         }
         spanType.innerHTML = selectBetonMark.options[selectBetonMark.selectedIndex].text;
-        spanVolume.innerHTML = selectVolume.options[selectVolume.selectedIndex].text;
+        spanVolume.innerHTML = selectVolume.value + " м³";
         spanPrice.innerHTML = cost + " BYN";
         modal.style.display = "block";
     }
@@ -706,5 +720,18 @@
         }
     })
 
+    let slideIndex = 0;
+    showSlides();
 
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
 </script>
