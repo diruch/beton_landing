@@ -1,15 +1,16 @@
 .footer-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 100px;
+    width: 1074px;
+    justify-content: center;
 }
 
 .footer-links {
     padding-top: 32px;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 180%;
     color: #081F32;
@@ -17,6 +18,20 @@
     gap: 32px;
 }
 
+.footer-legal-info {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: right;
+}
+
+.footer-content-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
 .footer-link {
     cursor: pointer;
 }
@@ -40,5 +55,28 @@
     .footer-links {
         flex-direction: column;
         align-items: center;
+    }
+    .footer-content {
+        width: 100%;
+    }
+    .footer-content-row {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer-author {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-legal-info {
+        padding-top: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links {
+        gap: 8px;
     }
 }
