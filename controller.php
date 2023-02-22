@@ -5,7 +5,7 @@ if (!isset($_SERVER['HTTP_TOKEN'])) {
     exit;
 }
 $token = $_SERVER['HTTP_TOKEN'];
-if (isset($_SESSION['LAST_PHONE_REQUESTED']) && (time() - $_SESSION['LAST_PHONE_REQUESTED']) < 300) {
+if (isset($_SESSION['LAST_PHONE_REQUESTED']) && (time() - $_SESSION['LAST_PHONE_REQUESTED']) < 30) {
     echo "TOO MANY REQUESTS";
     header($_SERVER['SERVER_PROTOCOL'] . ' 405 Method Not Allowed');
     exit;

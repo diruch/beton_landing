@@ -161,7 +161,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         <img class="delivery-content-image" src="./img/delivery/delivery1.jpg" alt="Доставка 2">
 
                         <div class="delivery-content-separator"></div>
-                        <div class="delivery-content-price">от 450 BYN</div>
+                        <div class="delivery-content-price">от 520 BYN</div>
                         <div class="delivery-content-price-description">смена 4 часа</div>
                         <div class="delivery-content-action-btn neworder">Заказать доставку</div>
                     </div>
@@ -370,7 +370,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         <div class="consultation-contancts-description">
                             По любым вопросам вы можете связаться с нами
                         </div>
-                        <div class="consultation-contancts-email">
+                        <div class="consultation-contancts-email" style="display: none">
                             <img src="./img/mail.svg" alt="email" style="padding-right: 12px;">
                             <a href="mailto:betonnasos@website.com">betonnasos@website.com</a>
                         </div>
@@ -380,13 +380,8 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                             </div>
                             <div class="consultation-contancts-phone-numbers">
                                 <div class="consultation-contancts-phone">
-                                    <a href="tel:+375291910444">
-                                        +375 (29) 191 04 44 (МТС)
-                                    </a>
-                                </div>
-                                <div class="consultation-contancts-phone">
-                                    <a href="tel:+375293078495">
-                                        +375 (29) 307 84 95 (А1)
+                                    <a href="tel:+375339951333">
+                                        +375 (33) 995 13 33 (МТС)
                                     </a>
                                 </div>
                                 <div class="consultation-contancts-phone">
@@ -454,6 +449,11 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                     </span>
                     <span class="footer-link" style="padding-right: 0px !important">
                         <a href="#price_table-info">Стоимость бетона</a>
+                    </span>
+                    <span class="footer-link" style="padding-right: 0px !important">
+                        <a target="_blank" rel="noopener noreferrer"
+                           href="https://www.instagram.com/beton_nasos_mogilev_region/">
+                        Наши Фото</a>
                     </span>
                 </div>
                 <div class="footer-author" style="cursor: pointer;">
