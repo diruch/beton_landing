@@ -1,16 +1,22 @@
 <?php
-session_start();
+if(!isset($_SESSION))
+{
+    session_start();
+}
 if (!isset($_SERVER['HTTP_TOKEN'])) {
     header($_SERVER['SERVER_PROTOCOL'] . ' 405 Method Not Allowed');
     exit;
 }
-$token = $_SERVER['HTTP_TOKEN'];
+$token = getenv("TG_TOKEN");
+$chatid = getenv("CHAT_ID");
+getUpdates($token);
+$tokenUser = $_SERVER['HTTP_TOKEN'];
 if (isset($_SESSION['LAST_PHONE_REQUESTED']) && (time() - $_SESSION['LAST_PHONE_REQUESTED']) < 30) {
     echo "TOO MANY REQUESTS";
     header($_SERVER['SERVER_PROTOCOL'] . ' 405 Method Not Allowed');
     exit;
 }
-if ($token !== $_SESSION['token']) {
+if ($tokenUser !== $_SESSION['token']) {
     // return 405 http status code
     header($_SERVER['SERVER_PROTOCOL'] . ' 405 Method Not Allowed');
     exit;
@@ -24,6 +30,7 @@ if ($token !== $_SESSION['token']) {
 
     $token = getenv("TG_TOKEN");
     $chatid = getenv("CHAT_ID");
+    getUpdates($token);
 
     $_SESSION['LAST_PHONE_REQUESTED'] = time();
     sendMessage($chatid, $text, $token);

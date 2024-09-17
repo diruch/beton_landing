@@ -1,5 +1,8 @@
 <?php
-session_start();
+if(!isset($_SESSION))
+{
+    session_start();
+}
 $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 ?>
 <!DOCTYPE html>
@@ -16,7 +19,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     <link rel="stylesheet" href="./css/blocks/header.css">
     <link rel="stylesheet" href="./css/blocks/home.css">
     <link rel="stylesheet" href="./css/blocks/benefits.css">
-    <link rel="stylesheet" href="./css/blocks/delivery.css">
+    <link rel="stylesheet" href="css/blocks/delivery_1.css">
     <link rel="stylesheet" href="./css/blocks/price_table.css">
     <link rel="stylesheet" href="./css/blocks/calculator.css">
     <link rel="stylesheet" href="./css/blocks/how_we_work.css">
@@ -146,10 +149,21 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         <div class="delivery-content-description">
                             <p>Доставка бетона и растворов от 0,3 м³ - 9 м³</p>
                         </div>
-                        <img class="delivery-content-image" src="./img/delivery/delivery2.jpg" alt="Доставка 1">
+                        <img class="delivery-content-image" src="./img/delivery/delivery2.png" alt="Доставка 1">
                         <span class="delivery-content-separator"></span>
-                        <div class="delivery-content-price">от 150 BYN</div>
+                        <div class="delivery-content-price">от 250 BYN</div>
                         <div class="delivery-content-price-description">&#8203;</div>
+                        <div class="delivery-content-action-btn neworder">Заказать доставку</div>
+                    </div>
+                    <div class="delivery-content-item">
+                        <div class="delivery-content-header">Гибридный Автобетононасос</div>
+                        <div class="delivery-content-description">
+                            <p>Cтреловой, для устройства: фундаментов, перекрытий, армопояса</p>
+                        </div>
+                        <iframe class="delivery-content-image" src="https://www.youtube.com/embed/sJr3kChGsKw?si=tczm_zXDOrKugOva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <span class="delivery-content-separator"></span>
+                        <div class="delivery-content-price">от 880 BYN</div>
+                        <div class="delivery-content-price-description">смена 4 часа</div>
                         <div class="delivery-content-action-btn neworder">Заказать доставку</div>
                     </div>
                     <div class="delivery-content-item">
@@ -161,7 +175,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         <img class="delivery-content-image" src="./img/delivery/delivery1.jpg" alt="Доставка 2">
 
                         <div class="delivery-content-separator"></div>
-                        <div class="delivery-content-price">от 520 BYN</div>
+                        <div class="delivery-content-price">от 600 BYN</div>
                         <div class="delivery-content-price-description">смена 4 часа</div>
                         <div class="delivery-content-action-btn neworder">Заказать доставку</div>
                     </div>
@@ -428,10 +442,8 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                     <a href="#home"><img src="./img/Logo.svg" alt="Logo"></a>
                 </div>
                 <div class="footer-legal-info">
-                    <div class="footer-legal-info-row">ООО «локальный»</div>
-                    <div class="footer-legal-info-row">ОГРН 1618477782145</div>
-                    <div class="footer-legal-info-row">ИНН 1281244552</div>
-                    <div class="footer-legal-info-row">КПП 78904332</div>
+                    <div class="footer-legal-info-row">ИП «Казаков Д.И.»</div>
+                    <div class="footer-legal-info-row">УНП 791332919</div>
                 </div>
             </div>
             <div class="delivery-content-separator" style="margin-top: 0"></div>
@@ -692,7 +704,6 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
         var spanPrice = document.getElementById("beton-price");
         var rangeDiv = document.getElementById("modal-range-div");
         rangeDiv.style.display = "none";
-        console.log(selectVolume.value);
         if (selectVolume.value) {
             selectVolume.style.borderColor = "#CBD5E1";
         } else {
@@ -712,7 +723,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
         spanVolume.innerHTML = selectVolume.value + " м³";
         spanPrice.innerHTML = cost + " BYN";
         calculationResult = "Марка: " + selectBetonMark.options[selectBetonMark.selectedIndex].text + ", Объем: " + selectVolume.value + ", Цена: " + cost;
-        if (outcityRange.value !== "") {
+        if (outcityRange && outcityRange.value !== "") {
             calculationResult += ", Растояние: " + outcityRange.value;
         }
         modal.style.display = "block";

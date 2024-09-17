@@ -29,8 +29,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 658px;
-    min-width: 658px;
+    max-width: 420px;
+    min-width: 420px;
     border: 1px solid #CBD5E1;
     border-radius: 6px;
     padding: 20px;
