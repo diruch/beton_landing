@@ -16,7 +16,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     <title>Бетон насос</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/blocks/header.css">
+    <link rel="stylesheet" href="css/blocks/header_1.css">
     <link rel="stylesheet" href="./css/blocks/home.css">
     <link rel="stylesheet" href="./css/blocks/benefits.css">
     <link rel="stylesheet" href="css/blocks/delivery_1.css">
@@ -34,21 +34,29 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 <header class="header">
     <div class="container">
         <div class="header-row">
-            <div class="header-logo"><img src="./img/Logo.svg" alt="Logo"></div>
+            <div class="header-logo"><img src="./img/Logo_new.svg" alt="Logo"></div>
             <div class="header-nav">
                 <li><a href="#delivery">Доставка</a></li>
                 <li><a href="#how_we_work">Этапы работы</a></li>
                 <li><a href="#price_table-info">Стоимость бетона</a></li>
                 <li><a href="#consultation">Контакты</a></li>
                 <li><a target="_blank" rel="noopener noreferrer"
-                       href="https://www.instagram.com/beton_nasos_mogilev_region/">
+                       href="https://www.instagram.com/gibrid.mogilev/">
                         Наши Фото</a></li>
             </div>
             <div class="header-action">
                 <a href="#calculator" class="action-header-calc-btn">Рассчитать стоимость</a>
             </div>
-            <input type="checkbox" id="checkbox_toggle"/>
-            <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+            <div class="header-row">
+                <a href="#consultation">
+                    <div class="header-mobile-contacts">
+                        <img src="./img/phone.svg" alt="phone"> Позвонить
+                    </div>
+                </a>
+                <input type="checkbox" id="checkbox_toggle"/>
+
+                <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+            </div>
         </div>
         <div class="header-mobile-menu" id="header-mobile-menu">
             <a href="#calculator" class="action-header-calc-btn">Рассчитать стоимость</a>
@@ -58,7 +66,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                 <li><a href="#price_table-info">Стоимость бетона</a></li>
                 <li><a href="#consultation">Контакты</a></li>
                 <li><a target="_blank" rel="noopener noreferrer"
-                       href="https://www.instagram.com/beton_nasos_mogilev_region/">
+                       href="https://www.instagram.com/gibrid.mogilev/">
                         Наши Фото</a></li>
             </div>
         </div>
@@ -69,7 +77,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
         <div class="container">
             <div class="home-content">
                 <div class="home-info">
-                    <h1 class="home-heading">Доставка бетона в Могилёве и Могилёвской области</h1>
+                    <h1 class="home-heading">Аренда стрелового насоса (гибрид) и доставка бетона в Могилеве и области</h1>
                     <div class="home-text">
                         <p>У нас всегда можно заказать доставку бетона популярных марок высокого качества М
                             100-М
@@ -149,7 +157,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         <div class="delivery-content-description">
                             <p>Доставка бетона и растворов от 0,3 м³ - 9 м³</p>
                         </div>
-                        <img class="delivery-content-image" src="./img/delivery/delivery2.png" alt="Доставка 1">
+                        <img class="delivery-content-image" src="./img/delivery/delivery2_123.png" alt="Доставка 1">
                         <span class="delivery-content-separator"></span>
                         <div class="delivery-content-price">от 250 BYN</div>
                         <div class="delivery-content-price-description">&#8203;</div>
@@ -160,9 +168,11 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         <div class="delivery-content-description">
                             <p>Cтреловой, для устройства: фундаментов, перекрытий, армопояса</p>
                         </div>
-                        <iframe class="delivery-content-image" src="https://www.youtube.com/embed/sJr3kChGsKw?si=tczm_zXDOrKugOva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--                        <iframe class="delivery-content-image" src="https://www.youtube.com/embed/sJr3kChGsKw?si=tczm_zXDOrKugOva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+
+                        <img class="delivery-content-image" src="./img/delivery/delivery2.png" alt="Доставка 1">
                         <span class="delivery-content-separator"></span>
-                        <div class="delivery-content-price">от 880 BYN</div>
+                        <div class="delivery-content-price">от 1000 BYN</div>
                         <div class="delivery-content-price-description">смена 4 часа</div>
                         <div class="delivery-content-action-btn neworder">Заказать доставку</div>
                     </div>
@@ -407,8 +417,8 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         </div>
                         <div class="consultation-contancts-insta">
                             <a target="_blank" rel="noopener noreferrer"
-                               href="https://www.instagram.com/beton_nasos_mogilev_region/">
-                                <img src="./img/insta.svg" alt="insta" style="cursor: pointer;">&nbsp;&nbsp;&nbsp;@beton_nasos_mogilev_region
+                               href="https://www.instagram.com/gibrid.mogilev/">
+                                <img src="./img/insta.svg" alt="insta" style="cursor: pointer;">&nbsp;&nbsp;&nbsp;@gibrid.mogilev
                             </a>
                         </div>
                     </div>
@@ -439,7 +449,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
         <div class="footer-content">
             <div class="footer-content-row">
                 <div class="footer-logo" style="cursor: pointer;">
-                    <a href="#home"><img src="./img/Logo.svg" alt="Logo"></a>
+                    <a href="#home"><img src="./img/Logo_new.svg" alt="Logo"></a>
                 </div>
                 <div class="footer-legal-info">
                     <div class="footer-legal-info-row">ИП «Казаков Д.И.»</div>
@@ -464,7 +474,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                     </span>
                     <span class="footer-link" style="padding-right: 0px !important">
                         <a target="_blank" rel="noopener noreferrer"
-                           href="https://www.instagram.com/beton_nasos_mogilev_region/">
+                           href="https://www.instagram.com/gibrid.mogilev/">
                         Наши Фото</a>
                     </span>
                 </div>

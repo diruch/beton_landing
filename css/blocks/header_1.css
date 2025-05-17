@@ -68,6 +68,22 @@ a.action-header-calc-btn:hover {
     display: none;
 }
 
+.header-mobile-contacts {
+    cursor: pointer;
+    display: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding: 16px;
+    color: white;
+    background-color: #DB522A;
+    border-radius: 5px;
+    width: 207px;
+    height: 52px;
+    margin-right: 24px;
+}
+
 .hamburger {
     font-size: 24px;
     cursor: pointer;
@@ -106,6 +122,10 @@ a.action-header-calc-btn:hover {
     .hamburger {
         display: block;
         padding: 20px 0;
+    }
+
+    .header-mobile-contacts {
+        display: block;
     }
 
     .header-nav {

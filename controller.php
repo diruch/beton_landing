@@ -7,8 +7,9 @@ if (!isset($_SERVER['HTTP_TOKEN'])) {
     header($_SERVER['SERVER_PROTOCOL'] . ' 405 Method Not Allowed');
     exit;
 }
-$token = getenv("TG_TOKEN");
-$chatid = getenv("CHAT_ID");
+$env = parse_ini_file('.env');
+$token = $env["TG_TOKEN"];
+$chatid = $env["CHAT_ID"];
 getUpdates($token);
 $tokenUser = $_SERVER['HTTP_TOKEN'];
 if (isset($_SESSION['LAST_PHONE_REQUESTED']) && (time() - $_SESSION['LAST_PHONE_REQUESTED']) < 30) {
@@ -28,8 +29,8 @@ if ($tokenUser !== $_SESSION['token']) {
     }
     $text = "Имя: " . $values['name'] . "\r\nТелефон: " . $values['phone'] . "\r\nКалькулятор: " . $values['calc'];
 
-    $token = getenv("TG_TOKEN");
-    $chatid = getenv("CHAT_ID");
+    $token = $env["TG_TOKEN"];
+    $chatid = $env["CHAT_ID"];
     getUpdates($token);
 
     $_SESSION['LAST_PHONE_REQUESTED'] = time();
@@ -46,7 +47,7 @@ function getUpdates($token)
     );
     curl_setopt_array($ch, $optArray);
     $result = curl_exec($ch);
-    echo $result;
+    // echo $result;
     curl_close($ch);
 }
 
@@ -54,21 +55,27 @@ function sendMessage($chatID, $messaggio, $token)
 {
     echo "sending message to " . $chatID . "\n";
 
-    $url = "https://api.telegram.org/bot" . $token . "/sendMessage?chat_id=" . $chatID;
-    $url = $url . "&text=" . urlencode($messaggio);
-    $ch = curl_init();
-    $optArray = array(
-        CURLOPT_URL => $url,
-        CURLOPT_RETURNTRANSFER => true
-    );
-    curl_setopt_array($ch, $optArray);
-    $result = curl_exec($ch);
-    if ($result === FALSE) {
-        die(curl_error($ch));
+    $url = "https://api.telegram.org/bot" . $token . "/sendMessage";
+    $data = [
+        'chat_id' => $chatID,
+        'text' => $messaggio,
+    ];
+
+    $options = [
+        'http' => [
+            'method' => 'POST',
+            'header' => "Content-Type:application/x-www-form-urlencoded\r\n",
+            'content' => http_build_query($data)
+        ]
+    ];
+
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+
+    if ($result === false) {
+        echo "Ошибка при отправке заказа в Telegram.";
     } else {
-        echo "{}";
+        echo "Заказ успешно отправлен!";
     }
-    curl_close($ch);
-    return $result;
 }
 ?>
