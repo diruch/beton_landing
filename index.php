@@ -215,7 +215,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-125 (С8/10)
                     </td>
                     <td class="price_table-td">
-                        117,00
+                        149,50
                     </td>
                 </tr>
                 <tr>
@@ -223,7 +223,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-150 (С10/12.5)
                     </td>
                     <td class="price_table-td">
-                        121,00
+                        152,00
                     </td>
                 </tr>
                 <tr>
@@ -231,7 +231,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-200 (С12/15)
                     </td>
                     <td class="price_table-td">
-                        129,00
+                        159,00
                     </td>
                 </tr>
                 <tr>
@@ -239,7 +239,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-250 (С16/20)
                     </td>
                     <td class="price_table-td">
-                        143,00
+                        175,00
                     </td>
                 </tr>
                 <tr>
@@ -247,7 +247,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-300 (С18/22.5)
                     </td>
                     <td class="price_table-td">
-                        149,00
+                        179,00
                     </td>
                 </tr>
                 <tr>
@@ -255,7 +255,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-350 (С20/25)
                     </td>
                     <td class="price_table-td">
-                        169,00
+                        199,00
                     </td>
                 </tr>
                 </tbody>
@@ -283,12 +283,12 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         <div class="calculator-beton-mark-param">
                             <p class="calculator-param-select-header">Выберите марку бетона</p>
                             <select id="select-beton-mark">
-                                <option value="117">Бетон С 8/10 (М150) П2</option>
-                                <option value="121">Бетон С 8/10 (М150) П3</option>
-                                <option value="129">Бетон С 12/15 (М200) П2</option>
-                                <option value="143">Бетон С 12/15 (М200) П3</option>
-                                <option value="149">Бетон С 16/20 (М250) П2</option>
-                                <option value="169">Бетон С 16/20 (М250) П3</option>
+                                <option value="149">Бетон С8/10 (М125)</option>
+                                <option value="152">Бетон С10/12,5 (М150)</option>
+                                <option value="159">Бетон С12/15 (М200)</option>
+                                <option value="175">Бетон С16/20 (М250)</option>
+                                <option value="179">Бетон С18/22,5 (М300)</option>
+                                <option value="199">Бетон С20/25 (М350)</option>
                             </select>
                         </div>
                         <div class="calculator-volume-param">
