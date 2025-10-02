@@ -13,7 +13,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <title>Бетон насос</title>
+    <title>Бетон Насос Гибрид Могилев</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="css/blocks/header_1.css">
