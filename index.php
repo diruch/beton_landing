@@ -12,6 +12,8 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Доставка бетона и аренда бетононасосов. Качественные услуги по доступным ценам.">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <title>Бетон Насос Гибрид Могилев</title>
     <link rel="stylesheet" href="./css/reset.css">
