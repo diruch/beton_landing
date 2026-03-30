@@ -6,16 +6,43 @@ if(!isset($_SESSION))
 $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Доставка бетона и аренда бетононасосов. Качественные услуги по доступным ценам.">
+    <meta name="description" content="Аренда стрелового бетононасоса (гибрид) и доставка бетона всех марок (М100-М550) в Могилеве и области. Качественные услуги по доступным ценам от 149.50 BYN/м³.">
+    <meta name="keywords" content="бетон Могилев, доставка бетона Могилев, аренда бетононасоса Могилев, бетононасос гибрид, заказать бетон Могилев, цена бетона Могилев">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <title>Бетон Насос Гибрид Могилев</title>
+    <title>Бетон Насос Гибрид Могилев - Аренда бетононасоса и доставка бетона в Могилеве</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://betonnasos.by/">
+    <meta property="og:title" content="Бетон Насос Гибрид Могилев - Аренда и доставка бетона">
+    <meta property="og:description" content="Аренда стрелового бетононасоса (гибрид) и доставка бетона в Могилеве и области. Высокое качество, доступные цены.">
+    <meta property="og:image" content="https://betonnasos.by/img/Logo_new.svg">
+    <meta property="og:site_name" content="Бетон Насос Гибрид">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://betonnasos.by/">
+    <meta property="twitter:title" content="Бетон Насос Гибрид Могилев - Аренда и доставка бетона">
+    <meta property="twitter:description" content="Аренда стрелового бетононасоса (гибрид) и доставка бетона в Могилеве и области. Высокое качество, доступные цены.">
+    <meta property="twitter:image" content="https://betonnasos.by/img/Logo_new.svg">
+
+    <!-- Google & Yandex Verification (placeholders) -->
+<!--    <meta name="google-site-verification" content="ВАШ_КОД_ПОДТВЕРЖДЕНИЯ_GOOGLE">-->
+<!--    <meta name="yandex-verification" content="ВАШ_КОД_ПОДТВЕРЖДЕНИЯ_YANDEX">-->
+
+    <!-- Mobile optimization & colors -->
+    <meta name="theme-color" content="#DB522A">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="canonical" href="https://beton-mogilev.by/">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="css/blocks/header_1.css">
@@ -36,7 +63,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 <header class="header">
     <div class="container">
         <div class="header-row">
-            <div class="header-logo"><img src="./img/Logo_new.svg" alt="Logo"></div>
+            <div class="header-logo"><img src="./img/Logo_new.svg" alt="Бетон Насос Гибрид Могилев"></div>
             <div class="header-nav">
                 <li><a href="#delivery">Доставка</a></li>
                 <li><a href="#how_we_work">Этапы работы</a></li>
@@ -52,7 +79,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
             <div class="header-row">
                 <a href="#consultation">
                     <div class="header-mobile-contacts">
-                        <img src="./img/phone.svg" alt="phone"> Позвонить
+                        <img src="./img/phone.svg" alt="Заказать звонок"> Позвонить
                     </div>
                 </a>
                 <input type="checkbox" id="checkbox_toggle"/>
@@ -95,10 +122,10 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                 </div>
                 <!--<div class="home-slider">
                     <div class="slide fade">
-                        <img src="./img/slider/slider1.jpg" class="slider-content" alt="Слайдер 1">
+                        <img src="./img/slider/slider1.jpg" class="slider-content" alt="Автобетононасос гибрид на объекте">
                     </div>
                     <div class="slide fade">
-                        <img src="./img/slider/slider2.jpg" class="slider-content" alt="Слайдер 1">
+                        <img src="./img/slider/slider2.jpg" class="slider-content" alt="Доставка бетона в Могилеве">
                     </div>
                      <div class="slider-buttons">
                         <span class="slider-button-active"></span>
@@ -112,31 +139,31 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 
     <section class="benefits" id="benefits">
         <div class="container">
-            <h1 class="benefits-header">Наши преимущества</h1>
+            <h2 class="benefits-header">Наши преимущества</h2>
             <div class="benefits-content">
                 <div class="benefits-content-element">
                     <div class="benefits-content-element-img"><img src="./img/benefits/punctuality.svg"
-                                                                   alt="Пунктуальность"></div>
+                                                                   alt="Пунктуальность доставки бетона"></div>
                     <div class="benefits-content-element-header">Пунктуальность</div>
                     <div class="benefits-content-element-description">Всегда соблюдаем график оговоренный с
                         клиентом
                     </div>
                 </div>
                 <div class="benefits-content-element">
-                    <div class="benefits-content-element-img"><img src="./img/benefits/experience.svg" alt="Опыт">
+                    <div class="benefits-content-element-img"><img src="./img/benefits/experience.svg" alt="Большой опыт работы с бетоном">
                     </div>
                     <div class="benefits-content-element-header">Опыт</div>
                     <div class="benefits-content-element-description">Более 10 лет на рынке</div>
                 </div>
                 <div class="benefits-content-element">
-                    <div class="benefits-content-element-img"><img src="./img/benefits/quality.svg" alt="Качество">
+                    <div class="benefits-content-element-img"><img src="./img/benefits/quality.svg" alt="Высокое качество бетона по ГОСТу">
                     </div>
                     <div class="benefits-content-element-header">Качество</div>
                     <div class="benefits-content-element-description">Строгий контроль сырья</div>
                 </div>
                 <div class="benefits-content-element">
                     <div class="benefits-content-element-img"><img src="./img/benefits/good_price.svg"
-                                                                   alt="Доступная цена"></div>
+                                                                   alt="Доступная цена за куб бетона"></div>
                     <div class="benefits-content-element-header">Доступная цена</div>
                     <div class="benefits-content-element-description">Честная цена без скрытых затрат. Все виды
                         оплаты (наличный и безналичный расчет)
@@ -150,16 +177,16 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     <section class="delivery" id="delivery">
         <div class="container">
             <div class="delivery-wrapper">
-                <h1 class="delivery-header">
+                <h2 class="delivery-header">
                     Доставка бетона
-                </h1>
+                </h2>
                 <div class="delivery-content">
                     <div class="delivery-content-item">
                         <div class="delivery-content-header">Автобетоносмеситель</div>
                         <div class="delivery-content-description">
                             <p>Доставка бетона и растворов от 0,3 м³ - 9 м³</p>
                         </div>
-                        <img class="delivery-content-image" src="./img/delivery/delivery2_123.png" alt="Доставка 1">
+                        <img class="delivery-content-image" src="./img/delivery/delivery2_123.png" alt="Доставка бетона автобетоносмесителем">
                         <span class="delivery-content-separator"></span>
                         <div class="delivery-content-price">от 250 BYN</div>
                         <div class="delivery-content-price-description">&#8203;</div>
@@ -170,24 +197,11 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         <div class="delivery-content-description">
                             <p>Cтреловой, для устройства: фундаментов, перекрытий, армопояса</p>
                         </div>
-<!--                        <iframe class="delivery-content-image" src="https://www.youtube.com/embed/sJr3kChGsKw?si=tczm_zXDOrKugOva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+                        <!--                        <iframe class="delivery-content-image" src="https://www.youtube.com/embed/sJr3kChGsKw?si=tczm_zXDOrKugOva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
 
-                        <img class="delivery-content-image" src="./img/delivery/delivery2.png" alt="Доставка 1">
+                        <img class="delivery-content-image" src="./img/delivery/delivery_0702025_1.jpg" alt="Аренда гибридного бетононасоса">
                         <span class="delivery-content-separator"></span>
                         <div class="delivery-content-price">от 1000 BYN</div>
-                        <div class="delivery-content-price-description">смена 4 часа</div>
-                        <div class="delivery-content-action-btn neworder">Заказать доставку</div>
-                    </div>
-                    <div class="delivery-content-item">
-                        <div class="delivery-content-header">Бетононасос</div>
-                        <div class="delivery-content-description">
-                            <p>Трасса из резиновых шлангов ф85 мм. Подача бетона
-                                на 150 м вертикально и горизонтально. Мощность 95 м³/час</p>
-                        </div>
-                        <img class="delivery-content-image" src="./img/delivery/delivery1.jpg" alt="Доставка 2">
-
-                        <div class="delivery-content-separator"></div>
-                        <div class="delivery-content-price">от 600 BYN</div>
                         <div class="delivery-content-price-description">смена 4 часа</div>
                         <div class="delivery-content-action-btn neworder">Заказать доставку</div>
                     </div>
@@ -198,9 +212,9 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 
     <section class="price_table-info" id="price_table-info">
         <div class="container">
-            <h1 class="price_table-header">
+            <h2 class="price_table-header">
                 Цены на товарный бетон
-            </h1>
+            </h2>
             <div class="price_table-desc">Цены бетона на щебне указаны без учета доставки</div>
             <table class="price_table">
                 <thead>
@@ -217,7 +231,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-125 (С8/10)
                     </td>
                     <td class="price_table-td">
-                        149,50
+                        165,00
                     </td>
                 </tr>
                 <tr>
@@ -225,7 +239,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-150 (С10/12.5)
                     </td>
                     <td class="price_table-td">
-                        152,00
+                        175,00
                     </td>
                 </tr>
                 <tr>
@@ -233,7 +247,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-200 (С12/15)
                     </td>
                     <td class="price_table-td">
-                        159,00
+                        180,00
                     </td>
                 </tr>
                 <tr>
@@ -241,7 +255,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-250 (С16/20)
                     </td>
                     <td class="price_table-td">
-                        175,00
+                        193,00
                     </td>
                 </tr>
                 <tr>
@@ -249,7 +263,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-300 (С18/22.5)
                     </td>
                     <td class="price_table-td">
-                        179,00
+                        196,00
                     </td>
                 </tr>
                 <tr>
@@ -257,7 +271,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         Бетон М-350 (С20/25)
                     </td>
                     <td class="price_table-td">
-                        199,00
+                        218,50
                     </td>
                 </tr>
                 </tbody>
@@ -285,12 +299,12 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         <div class="calculator-beton-mark-param">
                             <p class="calculator-param-select-header">Выберите марку бетона</p>
                             <select id="select-beton-mark">
-                                <option value="149">Бетон С8/10 (М125)</option>
-                                <option value="152">Бетон С10/12,5 (М150)</option>
-                                <option value="159">Бетон С12/15 (М200)</option>
-                                <option value="175">Бетон С16/20 (М250)</option>
-                                <option value="179">Бетон С18/22,5 (М300)</option>
-                                <option value="199">Бетон С20/25 (М350)</option>
+                                <option value="165">Бетон С8/10 (М125)</option>
+                                <option value="175">Бетон С10/12,5 (М150)</option>
+                                <option value="180">Бетон С12/15 (М200)</option>
+                                <option value="193">Бетон С16/20 (М250)</option>
+                                <option value="196">Бетон С18/22,5 (М300)</option>
+                                <option value="218">Бетон С20/25 (М350)</option>
                             </select>
                         </div>
                         <div class="calculator-volume-param">
@@ -344,9 +358,9 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 
     <section class="how_we_work" id="how_we_work">
         <div class="container">
-            <h1 class="how_we_work-header">
+            <h2 class="how_we_work-header">
                 Как мы работаем
-            </h1>
+            </h2>
             <div class="how_we_work-content">
                 <div class="how_we_work-element">
                     <div class="how_we_work-element-header">01</div>
@@ -406,13 +420,8 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                             </div>
                             <div class="consultation-contancts-phone-numbers">
                                 <div class="consultation-contancts-phone">
-                                    <a href="tel:+375339951333">
-                                        +375 (33) 995 13 33 (МТС)
-                                    </a>
-                                </div>
-                                <div class="consultation-contancts-phone">
-                                    <a href="tel:+375295051157">
-                                        +375 (25) 505 11 57 (life)
+                                    <a href="tel:+375297788007">
+                                        +375 (29) 778 80 07 (МТС)
                                     </a>
                                 </div>
                             </div>

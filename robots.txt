@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Allow: /index.php
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /img/
+
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /config/
+Disallow: /logs/
+Disallow: /phpmyadmin/
+Disallow: /*.pdf$
+Disallow: /*?print=
+Disallow: /*?utm_
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+
+Disallow: /*?*
+Allow: /*?$  # Разрешаем только пустые параметры
+
+Crawl-delay: 1
+
+Sitemap: https://www.betonnasos.by/sitemap.xml
