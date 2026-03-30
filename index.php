@@ -42,7 +42,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     <meta name="theme-color" content="#DB522A">
     <meta name="format-detection" content="telephone=no">
 
-    <link rel="canonical" href="https://beton-mogilev.by/">
+    <link rel="canonical" href="https://betonnasos.by/">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="css/blocks/header_1.css">
