@@ -65,7 +65,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
         "name": "Бетон Насос Гибрид Могилев",
         "description": "Аренда стрелового бетононасоса (гибрид) и доставка бетона всех марок (М100-М550) в Могилеве и области.",
         "url": "https://betonnasos.by/",
-        "telephone": "+375297788007",
+        "telephone": "+375291910444",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Могилев",
@@ -128,7 +128,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                 <a href="#calculator" class="action-header-calc-btn">Рассчитать стоимость</a>
             </div>
             <div class="header-row">
-                <a href="tel:+375297788007" onclick="trackCallConversion()">
+                <a href="tel:+375291910444" onclick="trackCallConversion()">
                     <div class="header-mobile-contacts">
                         <img src="./img/phone.svg" alt="Позвонить"> Позвонить
                     </div>
@@ -473,8 +473,8 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                             </div>
                             <div class="consultation-contancts-phone-numbers">
                                 <div class="consultation-contancts-phone">
-                                    <a href="tel:+375297788007" onclick="trackCallConversion()">
-                                        +375 (29) 778 80 07 (МТС)
+                                    <a href="tel:+375291910444" onclick="trackCallConversion()">
+                                        +375 (29) 191 04 44
                                     </a>
                                 </div>
                             </div>
