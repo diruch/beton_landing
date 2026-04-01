@@ -88,6 +88,25 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     }
     </script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17009478132"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17009478132');
+    </script>
+
+    <script>
+    function trackCallConversion() {
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17009478132/OIEjCJ2R9rgaEPST4K4_',
+            'value': 1.0,
+            'currency': 'USD'
+        });
+    }
+    </script>
+
 </head>
 
 <body>
@@ -109,7 +128,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                 <a href="#calculator" class="action-header-calc-btn">Рассчитать стоимость</a>
             </div>
             <div class="header-row">
-                <a href="tel:+375297788007">
+                <a href="tel:+375297788007" onclick="trackCallConversion()">
                     <div class="header-mobile-contacts">
                         <img src="./img/phone.svg" alt="Позвонить"> Позвонить
                     </div>
@@ -216,11 +235,11 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                 </h2>
                 <div class="delivery-content">
                     <div class="delivery-content-item">
-                        <div class="delivery-content-header">Автобетоносмеситель</div>
+                        <div class="delivery-content-header">Автобетоносмеситель 12м³</div>
                         <div class="delivery-content-description">
-                            <p>Доставка бетона и растворов от 0,3 м³ - 9 м³</p>
+                            <p>С гидравлическим лотком.<br>От 0,3 м³ - 12 м³</p>
                         </div>
-                        <img class="delivery-content-image" src="./img/delivery/delivery2_123.png" alt="Доставка бетона автобетоносмесителем в Могилеве" loading="lazy">
+                        <img class="delivery-content-image" src="./img/delivery/deliver-bottle.jpg" alt="Доставка бетона автобетоносмесителем в Могилеве" loading="lazy">
                         <span class="delivery-content-separator"></span>
                         <div class="delivery-content-price">от 250 BYN</div>
                         <div class="delivery-content-price-description">&#8203;</div>
@@ -454,7 +473,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                             </div>
                             <div class="consultation-contancts-phone-numbers">
                                 <div class="consultation-contancts-phone">
-                                    <a href="tel:+375297788007">
+                                    <a href="tel:+375297788007" onclick="trackCallConversion()">
                                         +375 (29) 778 80 07 (МТС)
                                     </a>
                                 </div>
@@ -525,7 +544,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                 </div>
                 <div class="footer-author" style="cursor: pointer;">
                     <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/arinasubach">
-                        © <?= date("Y") ?> Design by Aryna Subach
+                        © Design by Aryna Subach
                     </a>
                 </div>
             </div>
