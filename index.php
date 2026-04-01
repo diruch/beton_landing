@@ -48,7 +48,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     <link rel="canonical" href="https://betonnasos.by/">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/blocks/header_1.css">
+    <link rel="stylesheet" href="css/blocks/header_2.css">
     <link rel="stylesheet" href="./css/blocks/home.css">
     <link rel="stylesheet" href="./css/blocks/benefits.css">
     <link rel="stylesheet" href="./css/blocks/delivery_1.css">
