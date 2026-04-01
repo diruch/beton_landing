@@ -45,10 +45,10 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     <link rel="canonical" href="https://betonnasos.by/">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="css/blocks/header_1.css">
+    <link rel="stylesheet" href="./css/blocks/header_1.css">
     <link rel="stylesheet" href="./css/blocks/home.css">
     <link rel="stylesheet" href="./css/blocks/benefits.css">
-    <link rel="stylesheet" href="css/blocks/delivery_1.css">
+    <link rel="stylesheet" href="./css/blocks/delivery_1.css">
     <link rel="stylesheet" href="./css/blocks/price_table.css">
     <link rel="stylesheet" href="./css/blocks/calculator.css">
     <link rel="stylesheet" href="./css/blocks/how_we_work.css">
@@ -56,6 +56,38 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     <link rel="stylesheet" href="./css/blocks/footer.css">
     <link rel="stylesheet" href="./css/blocks/base.css">
     <link rel="stylesheet" href="./css/fonts/Roboto/stylesheet.css">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Бетон Насос Гибрид Могилев",
+        "description": "Аренда стрелового бетононасоса (гибрид) и доставка бетона всех марок (М100-М550) в Могилеве и области.",
+        "url": "https://betonnasos.by/",
+        "telephone": "+375297788007",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Могилев",
+            "addressCountry": "BY"
+        },
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 53.9045,
+                "longitude": 30.3449
+            },
+            "geoRadius": "100000"
+        },
+        "priceRange": "от 165 BYN/м³",
+        "image": "https://betonnasos.by/img/Logo_new.svg",
+        "sameAs": [
+            "https://www.instagram.com/gibrid.mogilev/"
+        ]
+    }
+    </script>
+
 </head>
 
 <body>
@@ -77,9 +109,9 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                 <a href="#calculator" class="action-header-calc-btn">Рассчитать стоимость</a>
             </div>
             <div class="header-row">
-                <a href="#consultation">
+                <a href="tel:+375297788007">
                     <div class="header-mobile-contacts">
-                        <img src="./img/phone.svg" alt="Заказать звонок"> Позвонить
+                        <img src="./img/phone.svg" alt="Позвонить"> Позвонить
                     </div>
                 </a>
                 <input type="checkbox" id="checkbox_toggle"/>
@@ -89,15 +121,17 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
         </div>
         <div class="header-mobile-menu" id="header-mobile-menu">
             <a href="#calculator" class="action-header-calc-btn">Рассчитать стоимость</a>
-            <div class="header-nav-mobile">
-                <li><a href="#delivery">Доставка</a></li>
-                <li><a href="#how_we_work">Этапы работы</a></li>
-                <li><a href="#price_table-info">Стоимость бетона</a></li>
-                <li><a href="#consultation">Контакты</a></li>
-                <li><a target="_blank" rel="noopener noreferrer"
-                       href="https://www.instagram.com/gibrid.mogilev/">
-                        Наши Фото</a></li>
-            </div>
+            <nav class="header-nav-mobile">
+                <ul>
+                    <li><a href="#delivery">Доставка</a></li>
+                    <li><a href="#how_we_work">Этапы работы</a></li>
+                    <li><a href="#price_table-info">Стоимость бетона</a></li>
+                    <li><a href="#consultation">Контакты</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                           href="https://www.instagram.com/gibrid.mogilev/">
+                            Наши Фото</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 </header>
@@ -143,27 +177,27 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
             <div class="benefits-content">
                 <div class="benefits-content-element">
                     <div class="benefits-content-element-img"><img src="./img/benefits/punctuality.svg"
-                                                                   alt="Пунктуальность доставки бетона"></div>
+                                                                   alt="Пунктуальность доставки бетона в Могилеве" loading="lazy"></div>
                     <div class="benefits-content-element-header">Пунктуальность</div>
                     <div class="benefits-content-element-description">Всегда соблюдаем график оговоренный с
                         клиентом
                     </div>
                 </div>
                 <div class="benefits-content-element">
-                    <div class="benefits-content-element-img"><img src="./img/benefits/experience.svg" alt="Большой опыт работы с бетоном">
+                    <div class="benefits-content-element-img"><img src="./img/benefits/experience.svg" alt="Большой опыт работы с бетоном в Могилеве" loading="lazy">
                     </div>
                     <div class="benefits-content-element-header">Опыт</div>
                     <div class="benefits-content-element-description">Более 10 лет на рынке</div>
                 </div>
                 <div class="benefits-content-element">
-                    <div class="benefits-content-element-img"><img src="./img/benefits/quality.svg" alt="Высокое качество бетона по ГОСТу">
+                    <div class="benefits-content-element-img"><img src="./img/benefits/quality.svg" alt="Высокое качество бетона по ГОСТу" loading="lazy">
                     </div>
                     <div class="benefits-content-element-header">Качество</div>
                     <div class="benefits-content-element-description">Строгий контроль сырья</div>
                 </div>
                 <div class="benefits-content-element">
                     <div class="benefits-content-element-img"><img src="./img/benefits/good_price.svg"
-                                                                   alt="Доступная цена за куб бетона"></div>
+                                                                   alt="Доступная цена за куб бетона в Могилеве" loading="lazy"></div>
                     <div class="benefits-content-element-header">Доступная цена</div>
                     <div class="benefits-content-element-description">Честная цена без скрытых затрат. Все виды
                         оплаты (наличный и безналичный расчет)
@@ -186,7 +220,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         <div class="delivery-content-description">
                             <p>Доставка бетона и растворов от 0,3 м³ - 9 м³</p>
                         </div>
-                        <img class="delivery-content-image" src="./img/delivery/delivery2_123.png" alt="Доставка бетона автобетоносмесителем">
+                        <img class="delivery-content-image" src="./img/delivery/delivery2_123.png" alt="Доставка бетона автобетоносмесителем в Могилеве" loading="lazy">
                         <span class="delivery-content-separator"></span>
                         <div class="delivery-content-price">от 250 BYN</div>
                         <div class="delivery-content-price-description">&#8203;</div>
@@ -199,7 +233,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         </div>
                         <!--                        <iframe class="delivery-content-image" src="https://www.youtube.com/embed/sJr3kChGsKw?si=tczm_zXDOrKugOva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
 
-                        <img class="delivery-content-image" src="./img/delivery/delivery_0702025_1.jpg" alt="Аренда гибридного бетононасоса">
+                        <img class="delivery-content-image" src="./img/delivery/delivery_0702025_1.jpg" alt="Аренда гибридного бетононасоса в Могилеве" loading="lazy">
                         <span class="delivery-content-separator"></span>
                         <div class="delivery-content-price">от 1000 BYN</div>
                         <div class="delivery-content-price-description">смена 4 часа</div>
@@ -499,7 +533,6 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     </div>
 </footer>
 
-
 <div id="calculationModal" class="modal">
     <div class="calculation-modal-content-wrapper">
         <span class="closeCalc">&times;</span>
@@ -615,9 +648,6 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
         </div>
     </div>
 </div>
-</body>
-
-</html>
 
 <script>
 
@@ -646,11 +676,24 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
         sendCalc();
     })
 
+    function getUtmParams() {
+        const params = new URLSearchParams(window.location.search);
+        const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+        let utm = [];
+        utmKeys.forEach(function(key) {
+            if (params.get(key)) utm.push(key + '=' + params.get(key));
+        });
+        return utm.join(', ');
+    }
+
     const sendCallback = async function (name, phone) {
         let request = {
             "name": name,
             "phone": phone,
-            "calc": calculationResult
+            "calc": calculationResult,
+            "referrer": document.referrer || "",
+            "utm": getUtmParams(),
+            "page": window.location.href
         }
         const response = await fetch('/controller.php', {
             method: 'POST',
@@ -715,6 +758,24 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
             return false;
         }
     }
+
+    function applyPhoneMask(input) {
+        input.addEventListener('focus', function () {
+            if (this.value === '') this.value = '+375 (';
+        });
+        input.addEventListener('input', function () {
+            var val = this.value.replace(/\D/g, '');
+            var formatted = '';
+            if (val.length > 0) formatted = '+' + val.substring(0, 3);
+            if (val.length > 3) formatted += ' (' + val.substring(3, 5);
+            if (val.length > 5) formatted += ') ' + val.substring(5, 8);
+            if (val.length > 8) formatted += '-' + val.substring(8, 10);
+            if (val.length > 10) formatted += '-' + val.substring(10, 12);
+            this.value = formatted;
+        });
+    }
+
+    document.querySelectorAll('input[placeholder="+375 (XX) XXX-XX-XX"]').forEach(applyPhoneMask);
 
     function calculate() {
         var selectBetonMark = document.getElementById("select-beton-mark");
@@ -818,3 +879,6 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     //     setTimeout(showSlides, 4000); // Change image every 2 seconds
     // }
 </script>
+</body>
+
+</html>

@@ -24,10 +24,20 @@ if ($tokenUser !== $_SESSION['token']) {
 } else {
     $json = file_get_contents('php://input');
     $values = json_decode($json, true);
-    if (!$values['name'] || !$values['phone'] || !$values['calc']) {
+    if (empty($values['name']) || empty($values['phone'])) {
         echo "VALIDATION ERROR";
+        exit;
     }
-    $text = "Имя: " . $values['name'] . "\r\nТелефон: " . $values['phone'] . "\r\nКалькулятор: " . $values['calc'];
+    $text = "Имя: " . $values['name'] . "\r\nТелефон: " . $values['phone'];
+    if (!empty($values['calc'])) {
+        $text .= "\r\nКалькулятор: " . $values['calc'];
+    }
+    if (!empty($values['utm'])) {
+        $text .= "\r\nUTM: " . $values['utm'];
+    }
+    if (!empty($values['referrer'])) {
+        $text .= "\r\nИсточник: " . $values['referrer'];
+    }
 
     $token = $env["TG_TOKEN"];
     $chatid = $env["CHAT_ID"];

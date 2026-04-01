@@ -24,4 +24,4 @@ Allow: /*?$  # Разрешаем только пустые параметры
 
 Crawl-delay: 1
 
-Sitemap: https://www.betonnasos.by/sitemap.xml
+Sitemap: https://betonnasos.by/sitemap.xml
