@@ -1,6 +1,5 @@
 <?php
-if(!isset($_SESSION))
-{
+if (!isset($_SESSION)) {
     session_start();
 }
 $_SESSION['token'] = md5(uniqid(mt_rand(), true));
@@ -13,16 +12,19 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Аренда стрелового бетононасоса (гибрид) и доставка бетона всех марок (М100-М550) в Могилеве и области. Качественные услуги по доступным ценам от 149.50 BYN/м³.">
-    <meta name="keywords" content="бетон Могилев, доставка бетона Могилев, аренда бетононасоса Могилев, бетононасос гибрид, заказать бетон Могилев, цена бетона Могилев">
+    <meta name="description"
+          content="Аренда стрелового бетононасоса (гибрид) и доставка бетона всех марок (М100-М550) в Могилеве и области. Качественные услуги по доступным ценам от 149.50 BYN/м³.">
+    <meta name="keywords"
+          content="бетон Могилев, доставка бетона Могилев, аренда бетононасоса Могилев, бетононасос гибрид, заказать бетон Могилев, цена бетона Могилев">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <title>Бетон Насос Гибрид Могилев - Аренда бетононасоса и доставка бетона в Могилеве</title>
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://betonnasos.by/">
     <meta property="og:title" content="Бетон Насос Гибрид Могилев - Аренда и доставка бетона">
-    <meta property="og:description" content="Аренда стрелового бетононасоса (гибрид) и доставка бетона в Могилеве и области. Высокое качество, доступные цены.">
+    <meta property="og:description"
+          content="Аренда стрелового бетононасоса (гибрид) и доставка бетона в Могилеве и области. Высокое качество, доступные цены.">
     <meta property="og:image" content="https://betonnasos.by/img/Logo_new.svg">
     <meta property="og:site_name" content="Бетон Насос Гибрид">
     <meta property="og:locale" content="ru_RU">
@@ -31,12 +33,13 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://betonnasos.by/">
     <meta property="twitter:title" content="Бетон Насос Гибрид Могилев - Аренда и доставка бетона">
-    <meta property="twitter:description" content="Аренда стрелового бетононасоса (гибрид) и доставка бетона в Могилеве и области. Высокое качество, доступные цены.">
+    <meta property="twitter:description"
+          content="Аренда стрелового бетононасоса (гибрид) и доставка бетона в Могилеве и области. Высокое качество, доступные цены.">
     <meta property="twitter:image" content="https://betonnasos.by/img/Logo_new.svg">
 
     <!-- Google & Yandex Verification (placeholders) -->
-<!--    <meta name="google-site-verification" content="ВАШ_КОД_ПОДТВЕРЖДЕНИЯ_GOOGLE">-->
-<!--    <meta name="yandex-verification" content="ВАШ_КОД_ПОДТВЕРЖДЕНИЯ_YANDEX">-->
+    <!--    <meta name="google-site-verification" content="ВАШ_КОД_ПОДТВЕРЖДЕНИЯ_GOOGLE">-->
+    <!--    <meta name="yandex-verification" content="ВАШ_КОД_ПОДТВЕРЖДЕНИЯ_YANDEX">-->
 
     <!-- Mobile optimization & colors -->
     <meta name="theme-color" content="#DB522A">
@@ -59,52 +62,56 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Бетон Насос Гибрид Могилев",
-        "description": "Аренда стрелового бетононасоса (гибрид) и доставка бетона всех марок (М100-М550) в Могилеве и области.",
-        "url": "https://betonnasos.by/",
-        "telephone": "+375291910444",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Могилев",
-            "addressCountry": "BY"
-        },
-        "areaServed": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": 53.9045,
-                "longitude": 30.3449
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Бетон Насос Гибрид Могилев",
+            "description": "Аренда стрелового бетононасоса (гибрид) и доставка бетона всех марок (М100-М550) в Могилеве и области.",
+            "url": "https://betonnasos.by/",
+            "telephone": "+375291910444",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Могилев",
+                "addressCountry": "BY"
             },
-            "geoRadius": "100000"
-        },
-        "priceRange": "от 165 BYN/м³",
-        "image": "https://betonnasos.by/img/Logo_new.svg",
-        "sameAs": [
-            "https://www.instagram.com/gibrid.mogilev/"
-        ]
-    }
+            "areaServed": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 53.9045,
+                    "longitude": 30.3449
+                },
+                "geoRadius": "100000"
+            },
+            "priceRange": "от 165 BYN/м³",
+            "image": "https://betonnasos.by/img/Logo_new.svg",
+            "sameAs": [
+                "https://www.instagram.com/gibrid.mogilev/"
+            ]
+        }
     </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17009478132"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17009478132');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'AW-17009478132');
     </script>
 
     <script>
-    function trackCallConversion() {
-        gtag('event', 'conversion', {
-            'send_to': 'AW-17009478132/OIEjCJ2R9rgaEPST4K4_',
-            'value': 1.0,
-            'currency': 'USD'
-        });
-    }
+        function trackCallConversion() {
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17009478132/OIEjCJ2R9rgaEPST4K4_',
+                'value': 1.0,
+                'currency': 'USD'
+            });
+        }
     </script>
 
 </head>
@@ -130,7 +137,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
             <div class="header-row">
                 <a href="tel:+375291910444" onclick="trackCallConversion()">
                     <div class="header-mobile-contacts">
-                        <img src="./img/phone.svg" alt="Позвонить"> Позвонить
+                        <img src="./img/phone.svg" alt="Позвонить"> +375 (29) 191 04 44
                     </div>
                 </a>
                 <input type="checkbox" id="checkbox_toggle"/>
@@ -159,7 +166,8 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
         <div class="container">
             <div class="home-content">
                 <div class="home-info">
-                    <h1 class="home-heading">Аренда стрелового насоса (гибрид) и доставка бетона в Могилеве и области</h1>
+                    <h1 class="home-heading">Аренда стрелового насоса (гибрид) и доставка бетона в Могилеве и
+                        области</h1>
                     <div class="home-text">
                         <p>У нас всегда можно заказать доставку бетона популярных марок высокого качества М
                             100-М
@@ -196,27 +204,33 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
             <div class="benefits-content">
                 <div class="benefits-content-element">
                     <div class="benefits-content-element-img"><img src="./img/benefits/punctuality.svg"
-                                                                   alt="Пунктуальность доставки бетона в Могилеве" loading="lazy"></div>
+                                                                   alt="Пунктуальность доставки бетона в Могилеве"
+                                                                   loading="lazy"></div>
                     <div class="benefits-content-element-header">Пунктуальность</div>
                     <div class="benefits-content-element-description">Всегда соблюдаем график оговоренный с
                         клиентом
                     </div>
                 </div>
                 <div class="benefits-content-element">
-                    <div class="benefits-content-element-img"><img src="./img/benefits/experience.svg" alt="Большой опыт работы с бетоном в Могилеве" loading="lazy">
+                    <div class="benefits-content-element-img"><img src="./img/benefits/experience.svg"
+                                                                   alt="Большой опыт работы с бетоном в Могилеве"
+                                                                   loading="lazy">
                     </div>
                     <div class="benefits-content-element-header">Опыт</div>
                     <div class="benefits-content-element-description">Более 10 лет на рынке</div>
                 </div>
                 <div class="benefits-content-element">
-                    <div class="benefits-content-element-img"><img src="./img/benefits/quality.svg" alt="Высокое качество бетона по ГОСТу" loading="lazy">
+                    <div class="benefits-content-element-img"><img src="./img/benefits/quality.svg"
+                                                                   alt="Высокое качество бетона по ГОСТу"
+                                                                   loading="lazy">
                     </div>
                     <div class="benefits-content-element-header">Качество</div>
                     <div class="benefits-content-element-description">Строгий контроль сырья</div>
                 </div>
                 <div class="benefits-content-element">
                     <div class="benefits-content-element-img"><img src="./img/benefits/good_price.svg"
-                                                                   alt="Доступная цена за куб бетона в Могилеве" loading="lazy"></div>
+                                                                   alt="Доступная цена за куб бетона в Могилеве"
+                                                                   loading="lazy"></div>
                     <div class="benefits-content-element-header">Доступная цена</div>
                     <div class="benefits-content-element-description">Честная цена без скрытых затрат. Все виды
                         оплаты (наличный и безналичный расчет)
@@ -239,7 +253,8 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         <div class="delivery-content-description">
                             <p>С гидравлическим лотком.<br>От 0,3 м³ - 12 м³</p>
                         </div>
-                        <img class="delivery-content-image" src="./img/delivery/deliver-bottle.jpg" alt="Доставка бетона автобетоносмесителем в Могилеве" loading="lazy">
+                        <img class="delivery-content-image" src="./img/delivery/deliver-bottle.jpg"
+                             alt="Доставка бетона автобетоносмесителем в Могилеве" loading="lazy">
                         <span class="delivery-content-separator"></span>
                         <div class="delivery-content-price">от 250 BYN</div>
                         <div class="delivery-content-price-description">&#8203;</div>
@@ -252,7 +267,8 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
                         </div>
                         <!--                        <iframe class="delivery-content-image" src="https://www.youtube.com/embed/sJr3kChGsKw?si=tczm_zXDOrKugOva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
 
-                        <img class="delivery-content-image" src="./img/delivery/delivery_0702025_1.jpg" alt="Аренда гибридного бетононасоса в Могилеве" loading="lazy">
+                        <img class="delivery-content-image" src="./img/delivery/delivery_0702025_1.jpg"
+                             alt="Аренда гибридного бетононасоса в Могилеве" loading="lazy">
                         <span class="delivery-content-separator"></span>
                         <div class="delivery-content-price">от 1000 BYN</div>
                         <div class="delivery-content-price-description">смена 4 часа</div>
@@ -699,7 +715,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
         const params = new URLSearchParams(window.location.search);
         const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
         let utm = [];
-        utmKeys.forEach(function(key) {
+        utmKeys.forEach(function (key) {
             if (params.get(key)) utm.push(key + '=' + params.get(key));
         });
         return utm.join(', ');

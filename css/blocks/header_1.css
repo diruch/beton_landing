@@ -70,7 +70,7 @@ a.action-header-calc-btn:hover {
 
 .header-mobile-contacts {
     cursor: pointer;
-    display: none;
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
